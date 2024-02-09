@@ -54,7 +54,6 @@ table {
 
 body{
 	font-family: 'Open Sans', sans-serif;
-	color: white;
 }
 
 .logo{
@@ -66,13 +65,3 @@ body{
 	color: white;
 }
 
-h2{
-	text-transform: uppercase;
-}
-.card-img-top{
-	width: auto;
-	height: 20vh;
-}
-i{
-	color:white;
-}
