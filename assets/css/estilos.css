@@ -65,3 +65,7 @@ body{
 	color: white;
 }
 
+h2{
+	text-transform: uppercase;
+	padding: 5% 0;
+}

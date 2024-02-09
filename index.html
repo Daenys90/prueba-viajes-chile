@@ -23,16 +23,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Inicio</a>
+            <a class="nav-link text-light" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Quiénes somos</a>
+            <a class="nav-link text-light" id=".q-s">Quiénes somos</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link text-light" href="#">Destacados</a>
+              <a class="nav-link text-light" id="descubre">Destacados</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#">Contacto</a>
+            <a class="nav-link text-light" id="contacto">Contacto</a>
         </li>         
         </ul>
       </div>
@@ -44,13 +44,13 @@
     <div id="carouselExample" class="carousel slide">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+          <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="llamas en la patagonia">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+          <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="pinguino">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+          <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="moais">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -64,34 +64,35 @@
     </div>
   </section>
 
-<section class="informacion">
+<section class="informacion text-center d-none d-md-block">
 <h2 class="text-center">¿Quiénes somos?</h2>
 <hr>
 
-<div class="container">
+<div class="container ">
 <div class="row">
-<div class="col">
+<div class="col-4">
 
   <div class="bg-info text-center">
     <i class="fa-solid fa-plane "></i>
   </div>
-
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto facilis quisquam, minima eaque nihil dolorem natus culpa, vitae omnis voluptate aut dolor. Cupiditate omnis ipsa dignissimos modi eos adipisci?
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto facilis quisquam, minima eaque nihil dolorem natus culpa, vitae omnis voluptate aut dolor. Cupiditate omnis ipsa dignissimos modi eos adipisci?
 </div>
-<div class="col">
+<div class="col-4">
   
   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi voluptatem excepturi eligendi sequi nihil neque aspernatur facere accusantium, ea quae odio molestias ipsa asperiores odit quaerat ipsum, cupiditate, voluptas saepe.
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto facilis quisquam, minima eaque nihil dolorem natus culpa, vitae omnis voluptate aut dolor. Cupiditate omnis ipsa dignissimos modi eos adipisci?
   <div class="bg-info text-center">
    <i class="fa-solid fa-mountain"></i>
   </div>
 </div>
-<div class="col">
+<div class="col-4">
   <div class="bg-info text-center">
     <i class="fa-solid fa-route"></i>
    </div>
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique autem, placeat ad incidunt provident repudiandae eveniet alias dolorum qui magni ducimus consectetur asperiores harum quidem sapiente impedit corrupti ea neque.
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto facilis quisquam, minima eaque nihil dolorem natus culpa, vitae omnis voluptate aut dolor. Cupiditate omnis ipsa dignissimos modi eos adipisci?
 </div>
-
 </div> 
 </div>
 </section>
@@ -180,22 +181,18 @@
 
 
 <script>
-  $(document).ready(function () {
-  $("#enviar").click(function () {
-    alert("El correo fue enviado correctamente...");
-  });
+ 
+$('#q-s').click(function() {
+$('html, body').animate({ scrollTop: $('.quienes').offset().top }, 1000);
+});
 
+$('#descubre').click(function() {
+$('html, body').animate({ scrollTop: $('.informacion').offset().top }, 1000);
+});
 
-      $("h3").click(function () {
-        $(this).css({
-          color: "red",
-          });
-      });
-        
-      $(".card-title").click(function () {
-        $(".card-text").toggle();
-      });
-    });
+$('#contacto').click(function() {
+$('html, body').animate({ scrollTop: $('.formulario').offset().top }, 1000);
+});
   
 </script>
 
